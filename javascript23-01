@@ -1,0 +1,65 @@
+var stud= function(id,Fname,Lname,m1,m2,m3){
+this.id=id;
+this.Fname=Fname;
+this.Lname=Lname;
+this.m1=m1;
+this.m2=m2;
+this.m3=m3;
+this.gettotal=function(){
+var Total=this.m1+this.m2+this.m3
+return Total;
+}
+this.getfullname=function(){
+var fullname=this.Fname+ " "+this.Lname
+return fullname
+}
+this.getgrade=function(Total){
+var totalmarks=this.gettotal();
+if(totalmarks>80){
+console.log("Is A Grade")
+}
+if(totalmarks<80&&totalmarks>70){
+console.log("Is B Grade")
+}
+if(totalmarks<70&&totalmarks>60){
+console.log("Is C Grade")
+}
+if(totalmarks<60&&totalmarks>35){
+console.log("Is D Grade")
+}
+if(totalmarks<35){
+console.log("Is Fail")
+}
+}
+}
+var std1=new stud(1,"karthik","borra",40,20,10)
+console.log(std1.id)
+console.log(std1.getfullname())
+console.log(std1.gettotal())
+console.log(std1.getgrade())
+var std2=new stud(2,"Ramu","Lamati",30,40,10)
+console.log(std2.id)
+console.log(std2.getfullname())
+console.log(std2.gettotal())
+console.log(std2.getgrade())
+var std3=new stud(3,"narendra","jillamudi",10,20,15)
+console.log(std3.id)
+console.log(std3.getfullname())
+console.log(std3.gettotal())
+console.log(std3.getgrade())
+var std4=new stud(4,"achyuth","kondasani",39,10,49)
+console.log(std4.id)
+console.log(std4.getfullname())
+console.log(std4.gettotal())
+console.log(std4.getgrade())
+var std5=new stud(5,"jagadeesh","gavireddy",25,20,10)
+console.log(std5.id)
+console.log(std5.getfullname())
+console.log(std5.gettotal())
+console.log(std5.getgrade())
+var std6=new stud(6,"vamsi","dama",33,23,21)
+console.log(std6.id)
+console.log(std6.getfullname())
+console.log(std6.gettotal())
+console.log(std6.getgrade())
+
